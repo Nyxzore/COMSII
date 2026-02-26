@@ -1,0 +1,1 @@
+CREATE TABLE customer (customer_id INTEGER, customer_fname VARCHAR(25), customer_lname VARCHAR(25))
