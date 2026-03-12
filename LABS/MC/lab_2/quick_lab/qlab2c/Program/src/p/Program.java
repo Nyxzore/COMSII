@@ -1,4 +1,4 @@
-package p;
+//package p;
 import java.util.*;
 public class Program {
 	
@@ -8,8 +8,9 @@ public class Program {
 		double sum = 0.0;
 		for (Rating r : v) {
 			size++;
-			sum += r.get_rating();
+			sum += r.getScore();
 		}
+		if (size == 0) return 0;
 		return sum/size;
 	}
 	

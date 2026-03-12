@@ -8,17 +8,17 @@ public class Rating {
 		score = s;
 	}
 	
-	void setScore(int r){
+	void set_Rating(int r){
 		score = r;
 		
 	}
-	int getScore(){
+	int get_Rating(){
 		return score;
 	}
-	void setUsername(String u){
+	void set_Username(String u){
 		username = u;
 	}
-	String getUsername(){
+	String get_Username(){
 		return username; 
 	}
 	

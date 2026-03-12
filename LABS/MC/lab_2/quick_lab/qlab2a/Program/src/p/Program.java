@@ -1,4 +1,4 @@
-package p;
+//package p;
 import java.util.Scanner;
 import java.util.*; 
 public class Program {
@@ -22,10 +22,15 @@ public class Program {
 		}
 		in.close();
 		
-		for (int i = 0; i<matrix.size(); i++) {
-			for (int j = 0; j<matrix.get(0).size(); j++)
-			System.out.print(matrix.get(j).get(i) + " ");
-			System.out.print('\n');
+		int m = (matrix.get(0)).size();
+		int n = matrix.size();
+		for (int i = 0; i<m; i++) {
+			for (int j = 0; j<n; j++) {
+				if (j<n-1) System.out.print(matrix.get(j).get(i) + " ");
+				else System.out.print(matrix.get(j).get(i));
+			}
+			
+			if (i<m-1) {System.out.print('\n');}
 		}
 	}
 }
