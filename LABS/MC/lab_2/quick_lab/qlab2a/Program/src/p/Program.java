@@ -1,5 +1,4 @@
 //package p;
-import java.util.Scanner;
 import java.util.*; 
 public class Program {
 	
