@@ -1,0 +1,4 @@
+select UPPER(last_name) as last_name,sport_name, TO_CHAR(join_date, 'dd-mm-yyyy') as join_date from student st 
+JOIN membership m on st.student_no = m.student_no
+JOIN sport s on m.sport_id = s.sport_id
+where enrollment_year = EXTRACT(YEAR FROM join_date);

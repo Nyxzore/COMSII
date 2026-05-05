@@ -1,0 +1,1 @@
+select student_no,first_name, REPLACE(email, 'uni.ac.za', 'wits.ac.za') as updated_email from student;

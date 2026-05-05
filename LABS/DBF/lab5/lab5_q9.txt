@@ -1,0 +1,1 @@
+select event_name, event_date, AGE(event_date) as time_since_event from event;

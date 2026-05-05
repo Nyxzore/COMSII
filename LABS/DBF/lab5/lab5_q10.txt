@@ -1,0 +1,11 @@
+create view Elite_Athletes as
+select DISTINCT(s.first_name) as first_name,s.last_name,s.faculty from student s
+join participation p on p.student_no = s.student_no
+join event e on p.event_id = e.event_id
+join membership m on m.student_no = p.student_no
+join sport sp on sp.sport_id = m.sport_id
+where e.event_type = 'Tournament' AND
+p.result = 'Win' AND
+sp.category = 'Team' AND
+m.status = 'Active';
+select * from Elite_Athletes;

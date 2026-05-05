@@ -1,0 +1,1 @@
+select first_name,last_name,enrollment_year from student where enrollment_year < all(select extract(year from event_date) from event where event_type = 'Tournament');

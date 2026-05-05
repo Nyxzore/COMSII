@@ -1,0 +1,3 @@
+CREATE VIEW Active_Students_Per_Faculty as
+select faculty, count(DISTINCT s.student_no) as active_student_count from student s join membership m on s.student_no = m.student_no where status = 'Active' group by faculty;
+select * from Active_Students_Per_Faculty;

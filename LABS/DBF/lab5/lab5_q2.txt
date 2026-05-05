@@ -1,0 +1,2 @@
+select extract(month from join_date) as join_month, count(*) AS total_memberships from membership
+group by join_month order by join_month;

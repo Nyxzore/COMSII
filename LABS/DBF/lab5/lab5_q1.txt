@@ -1,0 +1,1 @@
+SELECT student_no, CONCAT(INITCAP(first_name), ' ', INITCAP(last_name)) AS full_name, SPLIT_PART(email, '@', 2) AS email_domain FROM student;

@@ -1,0 +1,4 @@
+select * from event;
+select * from membership;
+select LOWER(event_name) as event_name, event_date from event
+where event_date > (select max(join_date) from membership);
